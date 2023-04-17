@@ -3,18 +3,18 @@
 @section('title', 'Rastsystem')
 
 @section('content_header')
-<h1>Usuário</h1>
+<h1>Perfil</h1>
 @stop
 
 @section('content')
 <div class="row">
     <!-- Modal Create Usuário -->
-    @include("usuario.add")
+    @include("perfil.add")
     <!-- Modal Create Usuário -->
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">
-                <h5 class="card-title">Lista de Usuários</h5>
+                <h5 class="card-title">Lista de Perfis</h5>
                 <div class="card-tools">
                     <button type="button" class="btn btn-tool" data-card-widget="collapse">
                         <i class="fas fa-minus"></i>
@@ -35,9 +35,7 @@
                             <table class="table m-0">
                                 <thead>
                                     <tr>
-                                        <th>Nome</th>
-                                        <th>Login</th>
-                                        <th>Email</th>
+                                        <th>Perfil</th>
                                         <th>Status</th>
                                         <th>Ações</th>
                                     </tr>

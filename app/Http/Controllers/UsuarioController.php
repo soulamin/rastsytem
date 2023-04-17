@@ -10,8 +10,8 @@ use Illuminate\Http\Request;
 class UsuarioController extends Controller
 {
     function index(){
-        $usuario = Usuario::all();
-        return view("usuario.index",[compact('usuario')]);
+        $usuarios = Usuario::all();
+        return view("usuario.index",compact('usuarios'));
     }
     function login(){
 
